@@ -19,3 +19,9 @@ e.g.[12, 20]
 20 = 2 x 2 x 5 // {2: 2, 5: 1}
 
 lcm = 2^2 x 3^1 x 5^1 -> 60
+
+## Performance
+
+The second approach is faster so I've had a little play around with nodes [performance module](https://nodejs.org/api/perf_hooks.html#performance-measurement-apis) which measures how long the code takes to execute for each test.
+
+The same tests are used for each function and the times it took each one to run (the whole test, not just the function cos cba to do it individually) are then added to `timings.txt`. It's far from an exact science and dependant on the hardware being used but I found it interesting all the same.
