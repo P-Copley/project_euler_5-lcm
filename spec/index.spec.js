@@ -25,7 +25,6 @@ function runTests(smallestCommonMultiple, funcName) {
     });
 
     after(async () => {
-      // console.log(timings);
       await fs.appendFile(
         'timings.txt',
         `${funcName}\n\n${JSON.stringify(timings, null, 2)}\n\n`

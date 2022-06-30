@@ -4,7 +4,6 @@ const { primesTo1000 } = require('./primes');
 function smallestCommonMultipleBrute(nums) {
   let result = Math.max(...nums);
   for (let i = 0; i < nums.length; i++) {
-    // console.log(nums[i], result, result % nums[i] !== 0);
     if (result % nums[i] !== 0) {
       result++;
       i = 0;
