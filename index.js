@@ -28,7 +28,7 @@ function smallestCommonMultiplePrimes(nums) {
         acc[prime] = factors[prime];
       }
     }
-    // find total produce of prime factors on last iteration
+    // find total product of prime factors on last iteration
     if (i === primeFactors.length - 1) {
       return Object.entries(acc).reduce(
         (total, [prime, exponent]) => total * prime ** exponent,
